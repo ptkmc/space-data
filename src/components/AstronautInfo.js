@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import AstronautAvatar from './AstronautAvatar';
+import chromeBlockedIcon from '../img/chrome-insecure-content-blocked-icon.jpg';
 
 class AstronautInfo extends React.Component {
   pluralizer(num) {
@@ -71,11 +72,31 @@ class AstronautInfo extends React.Component {
           <h1>Astronauts in Space</h1>
           <p>
             <i className="exclamation triangle icon" />
-            Unable to get current astronauts. Retrying in 5 min, or{' '}
-            <a href="#" onClick={() => window.location.reload(false)}>
-              refresh
-            </a>{' '}
-            the window.
+            Unable to get current astronauts. This is likely an issue with a
+            third-party API not serving over HTTPS.
+          </p>
+          <p>
+            To unblock the HTTP content, try the following in your browser:
+            <ul>
+              <li>
+                Chrome (desktop): click the shield icon{' '}
+                <img
+                  src={chromeBlockedIcon}
+                  alt="chrome content blocked icon"
+                />{' '}
+                in the address bar and click &quot;Load unsafe scripts&quot;
+              </li>
+              <li>
+                Firefox: follow{' '}
+                <a
+                  href="https://support.mozilla.org/en-US/kb/mixed-content-blocking-firefox#w_unblock-mixed-content"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  these steps
+                </a>
+              </li>
+            </ul>
           </p>
         </div>
       );
