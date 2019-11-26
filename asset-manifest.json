@@ -1,11 +1,18 @@
 {
-  "main.js": "/space-data/static/js/main.54d3af09.chunk.js",
-  "main.js.map": "/space-data/static/js/main.54d3af09.chunk.js.map",
-  "runtime~main.js": "/space-data/static/js/runtime~main.73706743.js",
-  "runtime~main.js.map": "/space-data/static/js/runtime~main.73706743.js.map",
-  "static/js/2.067bd2e5.chunk.js": "/space-data/static/js/2.067bd2e5.chunk.js",
-  "static/js/2.067bd2e5.chunk.js.map": "/space-data/static/js/2.067bd2e5.chunk.js.map",
-  "index.html": "/space-data/index.html",
-  "precache-manifest.1a67a9a8e0547bceda17295251c76e42.js": "/space-data/precache-manifest.1a67a9a8e0547bceda17295251c76e42.js",
-  "service-worker.js": "/space-data/service-worker.js"
+  "files": {
+    "main.js": "/space-data/static/js/main.19cfbbe2.chunk.js",
+    "main.js.map": "/space-data/static/js/main.19cfbbe2.chunk.js.map",
+    "runtime-main.js": "/space-data/static/js/runtime-main.4956757e.js",
+    "runtime-main.js.map": "/space-data/static/js/runtime-main.4956757e.js.map",
+    "static/js/2.5cdb567e.chunk.js": "/space-data/static/js/2.5cdb567e.chunk.js",
+    "static/js/2.5cdb567e.chunk.js.map": "/space-data/static/js/2.5cdb567e.chunk.js.map",
+    "index.html": "/space-data/index.html",
+    "precache-manifest.b8836cc666ddc0dd819e4aeadbbc1335.js": "/space-data/precache-manifest.b8836cc666ddc0dd819e4aeadbbc1335.js",
+    "service-worker.js": "/space-data/service-worker.js"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4956757e.js",
+    "static/js/2.5cdb567e.chunk.js",
+    "static/js/main.19cfbbe2.chunk.js"
+  ]
 }
