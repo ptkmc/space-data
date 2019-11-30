@@ -7,12 +7,12 @@ import StationInfo from './StationInfo';
 class App extends React.Component {
   state = {
     coords: [],
-    timestamp: undefined,
-    astronauts: undefined
+    timestamp: null,
+    astronauts: null
   };
 
   getAstronauts = async () => {
-    const url = 'http://api.open-notify.org/astros.json';
+    const url = 'https://space-api-server.herokuapp.com/api/astros.json';
     try {
       const data = await axios.get(url);
       this.setState({ astronauts: data.data });
@@ -22,7 +22,7 @@ class App extends React.Component {
   };
 
   getLocation = async () => {
-    const url = 'http://api.open-notify.org/iss-now.json';
+    const url = 'https://space-api-server.herokuapp.com/api/iss-now.json';
     try {
       let res = await axios.get(url);
       const { latitude, longitude } = res.data.iss_position;
